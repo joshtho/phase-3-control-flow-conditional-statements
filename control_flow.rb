@@ -31,10 +31,19 @@ def fizzbuzz(num)
 end
 
 def calculator(operation, num1, num2)
-  if operation == "+" || operation == "-" || operation == "*" || operation == "/"
-    num1 + operation + num2
+  case operation
+  when "+"
+    num1 + num2
+  when "-"
+    num1 - num2
+  when  "/"
+    num1 / num2
+  when  "*"
+    num1 * num2
   else 
-    "Invalid operation" + nil
+    puts "Invalid operation!" 
   end
 end
+
+
 
