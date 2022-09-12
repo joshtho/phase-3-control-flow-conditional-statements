@@ -1,5 +1,9 @@
 def admin_login(username, password)
-  # your code here
+  if username == "admin" && password == 12345 || username == "ADMIN" && password == 12345
+    return "Access granted"
+  else
+    "Access denied"
+  end
 end
 
 def hows_the_weather(temperature)
